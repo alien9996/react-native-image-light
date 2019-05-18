@@ -346,13 +346,12 @@ public class RNImageLightModule extends ReactContextBaseJavaModule {
     paint.setXfermode(porterMode);
 
     Matrix borderMatrix = new Matrix();
-    if (options.getBoolean(IS_ACCSETS)) {
 
-      float wScale = ((float) btm.getWidth()) / ((float) overlay.getWidth());
-      float hScale = ((float) btm.getHeight()) / ((float) overlay.getHeight());
-      borderMatrix.reset();
-      borderMatrix.postScale(wScale, hScale);
-    }
+    float wScale = ((float) btm.getWidth()) / ((float) overlay.getWidth());
+    float hScale = ((float) btm.getHeight()) / ((float) overlay.getHeight());
+    borderMatrix.reset();
+    borderMatrix.postScale(wScale, hScale);
+
     Canvas cvs = new Canvas(btm);
     cvs.drawBitmap(overlay, borderMatrix, paint);
 
