@@ -1,20 +1,34 @@
-
 {
   "name": "react-native-image-light",
   "version": "1.0.0",
-  "description": "",
+  "author": "Alien",
+  "license": "MIT",
+  "description": "React native library image processing",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "android",
+    "image",
+    "processing",
+    "overlay",
+    "light"
   ],
-  "author": "",
-  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alien9996/react-native-image-light.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alien9996/react-native-image-light/issues"
+  },
+  "homepage": "https://github.com/alien9996/react-native-image-light#readme",
   "peerDependencies": {
-    "react-native": "^0.41.2",
+    "react-native": ">=0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.54.1"
   }
 }
