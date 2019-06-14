@@ -1,6 +1,9 @@
 
 # react-native-image-light
 
+## Demo
+![gif]()
+
 ## Getting started
 
 `$ npm install react-native-image-light --save`
