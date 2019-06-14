@@ -89,7 +89,7 @@ RNImageLight.getResourcesImageLight({
 			// "source" returns the height, width and the Base64 string of the image.
           });
 ```
-**Note**: To get the most perfect picture, you should send it to **imageSource1** and **imageSource2** of similar sized pictures.
+**Note**: To get the most perfect picture, you should send to **imageSource1** and **imageSource2** images of similar size.<br>
 **You will get the following result**
 
 ![Demo1](https://github.com/alien9996/react-native-image-light/blob/master/demo.png?raw=true)
