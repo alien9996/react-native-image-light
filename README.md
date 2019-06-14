@@ -1,8 +1,10 @@
 
 # react-native-image-light
 
+**Libraries add mode lighting effects to your images**
+
 ## Demo
-![gif]()
+![gif](https://github.com/alien9996/react-native-image-light/blob/master/Light.gif?raw=true)
 
 ## Getting started
 
@@ -25,12 +27,13 @@
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNImageLightPackage;` to the imports at the top of the file
+  - Add `import com.reactlibraryimagelight.RNImageLightPackage;` to the imports at the top of the file
   - Add `new RNImageLightPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-image-light'
-  	project(':react-native-image-light').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-image-light/android')
+	project(':react-native-image-light').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-image-light/android')
+
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
@@ -46,11 +49,47 @@
   - Add `new RNImageLightPackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
 
-## Usage
+## Example
+#### You have two choices to use the library.
+
+1. **Resource use is available.**
 ```javascript
 import RNImageLight from 'react-native-image-light';
 
-// TODO: What to do with the module?
-RNImageLight;
+RNImageLight.getResourcesImageLight({
+	imageSource1: "/storage/emulated/0/Download/img.jpg",
+	imageSource2: null,
+	dataType1: "Path",
+	dataType2: "Path",
+	overlayType: 3,
+	isAccsets: true
+	}, (source) => {
+		this.setState(imgBase64 : source.base64);
+		console.log("SOURCE", source);
+		// **source** returns the height, width and the Base64 string of the image.
+	});
 ```
-  
+**The result you get will be the same as the demo**
+
+2. **Use an external rescource of your**
+
+```javascript
+import RNImageLight from 'react-native-image-light';
+
+RNImageLight.getResourcesImageLight({
+            imageSource1: "/storage/emulated/0/Download/img.jpg",
+            imageSource2: "/storage/emulated/0/Download/img2-0.jpg",
+            dataType1: "Path",
+            dataType2: "Path",
+            overlayType: 0,
+            isAccsets: false
+          }, (source) => {
+           	this.setState(imgBase64 : source.base64);
+			console.log("SOURCE", source);
+			// **source** returns the height, width and the Base64 string of the image.
+          });
+```
+**You will get the following result**
+
+![Demo1](https://github.com/alien9996/react-native-image-light/blob/master/demo.png?raw=true)
+
