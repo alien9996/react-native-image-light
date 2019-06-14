@@ -50,7 +50,7 @@
 
 
 ## Example
-#### You have two choices to use the library.
+### You have two choices to use the library.
 
 1. **Resource use is available.**
 ```javascript
@@ -66,7 +66,7 @@ RNImageLight.getResourcesImageLight({
 	}, (source) => {
 		this.setState(imgBase64 : source.base64);
 		console.log("SOURCE", source);
-		// **source** returns the height, width and the Base64 string of the image.
+		// "source" returns the height, width and the Base64 string of the image.
 	});
 ```
 **The result you get will be the same as the demo**
@@ -78,7 +78,7 @@ import RNImageLight from 'react-native-image-light';
 
 RNImageLight.getResourcesImageLight({
             imageSource1: "/storage/emulated/0/Download/img.jpg",
-            imageSource2: "/storage/emulated/0/Download/img2-0.jpg",
+            imageSource2: "/storage/emulated/0/Download/img2.jpg",
             dataType1: "Path",
             dataType2: "Path",
             overlayType: 0,
@@ -86,10 +86,31 @@ RNImageLight.getResourcesImageLight({
           }, (source) => {
            	this.setState(imgBase64 : source.base64);
 			console.log("SOURCE", source);
-			// **source** returns the height, width and the Base64 string of the image.
+			// "source" returns the height, width and the Base64 string of the image.
           });
 ```
+**Note**: To get the most perfect picture, you should send it to **imageSource1** and **imageSource2** of similar sized pictures.
 **You will get the following result**
 
 ![Demo1](https://github.com/alien9996/react-native-image-light/blob/master/demo.png?raw=true)
 
+## Options
+
+Props | Default | Options/Info
+------ | --- | ------
+imageSource1 (String)|null|The path to the image in the device or a Base64 string.
+imageSource2 (String)|null|The path to the image in the device or a Base64 string.
+dataType1 (String)|Path|If you send a path, enter the string "Path"<br>If you send a Base64 string, enter the string "Base64".
+dataType2 (String)|Path|If you send a path, enter the string "Path"<br>If you send a Base64 string, enter the string "Base64".<br> **Note**: Valid only when isAccsets = false.
+overlayType (int)|0|Select the type you want to process images, the values from 0 to 26. Other values around 0 to 26 will not take effect.<br> **Note**: Valid only when isAccsets = true.
+isAccsets (boolean)|true|If you want use the resource, select **true**.<br>
+If you do not want use resource, select **false**.
+
+## Filter types
+
+![filterType](https://github.com/alien9996/react-native-image-light/blob/master/overlay_type.png?raw=true)
+
+## Note
+- The image path you send into **imageSource1:''** and **imageSource2:''**  must be the absolute path. If you have problems with the absolute path, you can find the solution [here](https://stackoverflow.com/questions/52423067/how-to-get-absolute-path-of-a-file-in-react-native).
+
+### Thank you for your interest!
