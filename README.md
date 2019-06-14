@@ -103,8 +103,7 @@ imageSource2 (String)|null|The path to the image in the device or a Base64 strin
 dataType1 (String)|Path|If you send a path, enter the string "Path"<br>If you send a Base64 string, enter the string "Base64".
 dataType2 (String)|Path|If you send a path, enter the string "Path"<br>If you send a Base64 string, enter the string "Base64".<br> **Note**: Valid only when isAccsets = false.
 overlayType (int)|0|Select the type you want to process images, the values from 0 to 26. Other values around 0 to 26 will not take effect.<br> **Note**: Valid only when isAccsets = true.
-isAccsets (boolean)|true|If you want use the resource, select **true**.<br>
-If you do not want use resource, select **false**.
+isAccsets (boolean)|true|If you want use the resource, select **true**.<br>If you do not want use resource, select **false**.
 
 ## Filter types
 
