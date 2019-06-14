@@ -84,7 +84,7 @@ RNImageLight.getResourcesImageLight({
             overlayType: 0,
             isAccsets: false
           }, (source) => {
-           	this.setState(imgBase64 : source.base64);
+			this.setState(imgBase64 : source.base64);
 			console.log("SOURCE", source);
 			// "source" returns the height, width and the Base64 string of the image.
           });
@@ -105,7 +105,7 @@ dataType2 (String)|Path|If you send a path, enter the string "Path"<br>If you se
 overlayType (int)|0|Select the type you want to process images, the values from 0 to 26. Other values around 0 to 26 will not take effect.<br> **Note**: Valid only when isAccsets = true.
 isAccsets (boolean)|true|If you want use the resource, select **true**.<br>If you do not want use resource, select **false**.
 
-## Filter types
+## Overlay types
 
 ![filterType](https://github.com/alien9996/react-native-image-light/blob/master/overlay_type.png?raw=true)
 
