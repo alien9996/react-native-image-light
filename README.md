@@ -4,7 +4,7 @@
 **Libraries add mode lighting effects to your images**
 
 ## Demo
-![gif](https://github.com/alien9996/react-native-image-light/blob/master/Light.gif?raw=true)
+![gif](https://github.com/alien9996/library-gif/blob/main/Light.gif?raw=true)
 
 ## Getting started
 
@@ -92,7 +92,7 @@ RNImageLight.getResourcesImageLight({
 **Note**: To get the most perfect picture, you should send to **imageSource1** and **imageSource2** images of similar size.<br>
 **You will get the following result**
 
-![Demo1](https://github.com/alien9996/react-native-image-light/blob/master/demo.png?raw=true)
+![Demo1](https://github.com/alien9996/library-gif/blob/main/demo_light.png?raw=true)
 
 ## Options
 
@@ -107,7 +107,7 @@ isAccsets (boolean)|true|If you want use the resource, select **true**.<br>If yo
 
 ## Overlay types
 
-![filterType](https://github.com/alien9996/react-native-image-light/blob/master/overlay_type.png?raw=true)
+![filterType](https://github.com/alien9996/library-gif/blob/main/overlay_type.png?raw=true)
 
 ## Note
 - The image path you send into **imageSource1:''** and **imageSource2:''**  must be the absolute path. If you have problems with the absolute path, you can find the solution [here](https://stackoverflow.com/questions/52423067/how-to-get-absolute-path-of-a-file-in-react-native).
